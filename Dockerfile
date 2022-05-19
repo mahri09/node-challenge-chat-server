@@ -4,7 +4,7 @@ FROM node:14-alpine3.14
 COPY package.json .
 COPY package-lock.json .
 COPY server.js .
-COPY routes messages
+COPY routes routes
 
 # Install the dependencies
 RUN npm ci
